@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cine',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./cine.component.css']
 })
 export class CineComponent {
+  public genero: string = "";
+
+  constructor(
+    private route: ActivatedRoute
+  ) { }
+
+  ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.genero = params['genero'];
+    });
+  }
 
 }
