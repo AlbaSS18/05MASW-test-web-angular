@@ -12,6 +12,7 @@ import { PodcastComponent } from './components/podcast/podcast.component';
 import { VideojuegosComponent } from './components/videojuegos/videojuegos.component';
 import { MusicaComponent } from './components/musica/musica.component';
 import { routing } from './app.routing';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { routing } from './app.routing';
     LibrosComponent,
     PodcastComponent,
     VideojuegosComponent,
-    MusicaComponent
+    MusicaComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
