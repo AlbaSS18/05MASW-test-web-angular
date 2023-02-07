@@ -1,1 +1,7 @@
 <p>musica works!</p>
+<div *ngFor="let record of records">
+    <h2>{{record.title}}</h2>
+    <h3>{{record.artist}}</h3>
+    <h3>{{record.year}}</h3>
+    <img src="{{record.image_path}}" alt="{{record.title}" width="200px" height="200px">
+</div>
