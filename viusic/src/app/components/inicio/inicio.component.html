@@ -1,1 +1,6 @@
-<p>inicio works!</p>
+<p>Bienvenidos a la página web {{titulo}}</p>
+<button (click)="pulsame()">Púlsame</button>
+<div *ngIf="pulsaciones > 0">
+    <p>Has pulsado un total de {{pulsaciones}} veces.</p>
+    <button (click)="reset()">Reset</button>
+</div>
