@@ -11,6 +11,7 @@ import { LibrosComponent } from './components/libros/libros.component';
 import { PodcastComponent } from './components/podcast/podcast.component';
 import { VideojuegosComponent } from './components/videojuegos/videojuegos.component';
 import { MusicaComponent } from './components/musica/musica.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MusicaComponent } from './components/musica/musica.component';
     MusicaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
