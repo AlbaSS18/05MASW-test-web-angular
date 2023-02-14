@@ -9,7 +9,8 @@
     >{{record.year}}</h3>
     <img src="{{record.image_path}}" alt="{{record.title}" width="200px" height="200px">
     <div *ngFor="let song of record.songs">
-        <p>{{song.track}}. {{song.title}}</p>
+        <!-- <p>{{song.track}}. {{song.title}}</p> -->
+        <app-cancion [song]="song"></app-cancion>
     </div>
     <hr *ngIf="i<records.length-1">
 </article>

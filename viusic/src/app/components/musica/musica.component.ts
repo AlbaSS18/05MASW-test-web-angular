@@ -20,10 +20,10 @@ export class MusicaComponent {
       [
         new Song (2, 1, 'Clima tropical', 'Dani Fernández', 'https://cdn.pixabay.com/audio/2021/12/22/audio_9da2a60074.mp3', 2),
         new Song (2, 2, 'Plan fatal', 'Dani Fernández', 'https://cdn.pixabay.com/audio/2021/12/22/audio_9da2a60074.mp3', 2),
-        new Song (3, 2, 'Frío', 'Dani Fernández', 'https://cdn.pixabay.com/audio/2021/12/22/audio_9da2a60074.mp3', 2),
-        new Song (4, 2, 'Grace', 'Dani Fernández', 'https://cdn.pixabay.com/audio/2021/12/22/audio_9da2a60074.mp3', 2),
-        new Song (5, 2, 'Dile a los demás', 'Dani Fernández', 'https://cdn.pixabay.com/audio/2021/12/22/audio_9da2a60074.mp3', 2),
-        new Song (6, 2, 'Artificial', 'Dani Fernández', 'https://cdn.pixabay.com/audio/2021/12/22/audio_9da2a60074.mp3', 2),
+        new Song (3, 3, 'Frío', 'Dani Fernández', 'https://cdn.pixabay.com/audio/2021/12/22/audio_9da2a60074.mp3', 2),
+        new Song (4, 4, 'Grace', 'Dani Fernández', 'https://cdn.pixabay.com/audio/2021/12/22/audio_9da2a60074.mp3', 2),
+        new Song (5, 5, 'Dile a los demás', 'Dani Fernández', 'https://cdn.pixabay.com/audio/2021/12/22/audio_9da2a60074.mp3', 2),
+        new Song (6, 6, 'Artificial', 'Dani Fernández', 'https://cdn.pixabay.com/audio/2021/12/22/audio_9da2a60074.mp3', 2),
       ]),
       new Disco (3, 'Motomami', 'Rosalia', 2022, 'https://www.lahiguera.net/musicalia/artistas/rosalia/disco/11741/portada-p.jpg',
       [
