@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Disco } from 'src/app/models/record';
 
 @Component({
   selector: 'app-musica',
@@ -6,40 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./musica.component.css']
 })
 export class MusicaComponent {
-  public records: Array<any>;
+  public records: Array<Disco>;
 
   constructor() {
     this.records = [
-      {
-        title: 'Reputation',
-        artist: 'Taylor Swift',
-        year: 2017,
-        image_path: 'https://www.lahiguera.net/musicalia/artistas/taylor_swift/disco/8600/taylor_swift_reputation-portada.jpg'
-      },
-      {
-        title: 'Entre las dudas y el azar',
-        artist: 'Dani Fernández',
-        year: 2022,
-        image_path: 'https://www.lahiguera.net/musicalia/artistas/dani_fernandez/disco/11710/dani_fernandez_entre_las_dudas_y_el_azar-portada.jpg'
-      },
-      {
-        title: 'Motomami',
-        artist: 'Rosalia',
-        year: 2022,
-        image_path: 'https://www.lahiguera.net/musicalia/artistas/rosalia/disco/11741/portada-p.jpg'
-      },
-      {
-        title: 'La cuarta hoja',
-        artist: 'Pablo Alborán',
-        year: 2022,
-        image_path: 'https://www.lahiguera.net/musicalia/artistas/pablo_alboran/disco/12473/pablo_alboran_la_cuarta_hoja-portada.jpg'
-      },
-      {
-        title: '11 Razones',
-        artist: 'Aitana',
-        year: 2020,
-        image_path: 'https://www.lahiguera.net/musicalia/artistas/aitana/disco/10960/aitana_11_razones-portada.jpg'
-      }
+      new Disco (1, 'Reputation', 'Taylor Swift', 2017, 'https://www.lahiguera.net/musicalia/artistas/taylor_swift/disco/8600/taylor_swift_reputation-portada.jpg'),
+      new Disco (2, 'Entre las dudas y el azar', 'Dani Fernández', 2022, 'https://www.lahiguera.net/musicalia/artistas/dani_fernandez/disco/11710/dani_fernandez_entre_las_dudas_y_el_azar-portada.jpg'),
+      new Disco (3, 'Motomami', 'Rosalia', 2022, 'https://www.lahiguera.net/musicalia/artistas/rosalia/disco/11741/portada-p.jpg'),
+      new Disco (4, 'La cuarta hoja', 'Pablo Alborán', 2022, 'https://www.lahiguera.net/musicalia/artistas/pablo_alboran/disco/12473/pablo_alboran_la_cuarta_hoja-portada.jpg'),
+      new Disco (5, '11 Razones', 'Aitana', 2020, 'https://www.lahiguera.net/musicalia/artistas/aitana/disco/10960/aitana_11_razones-portada.jpg'),
     ]; 
   }
 }

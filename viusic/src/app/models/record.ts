@@ -1,4 +1,6 @@
-class Disco {
+export class Disco {
+    // Añadir esto es lo mismo que meterlo en el constructor
+    /* 
     title: string;
     artist: string;
     year: number;
@@ -9,5 +11,17 @@ class Disco {
         this.artist = artist;
         this.year = year;
         this.image_path = image_path;
+    } 
+    */
+
+    constructor(
+        public id: number,
+        public title: string,
+        public artist: string,
+        public year: number,
+        public image_path: string,
+    )
+    {
     }
+
 }
