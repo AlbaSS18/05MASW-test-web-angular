@@ -1,6 +1,6 @@
 <p>Discos disponibles:</p>
 <article *ngFor="let record of records; let i=index">
-    <h2>{{record.title}}</h2>
+    <h2>{{record.title | uppercase}}</h2>
     <h3>{{record.artist}}</h3>
     <h3 [ngClass]="{
         'green': record.year > 2020,
