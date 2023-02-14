@@ -9,6 +9,7 @@ import { Song } from 'src/app/models/song';
 })
 export class MusicaComponent {
   public records: Array<Disco>;
+  public playing: string;
 
   constructor() {
     this.records = [
@@ -38,5 +39,12 @@ export class MusicaComponent {
 
       ]),
     ]; 
+
+    this.playing = '';
+  }
+
+  playSong(song: Song): void {
+    console.log(song);
+    this.playing = `${song.title} - ${song.artist}`;
   }
 }

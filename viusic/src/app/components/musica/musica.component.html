@@ -1,3 +1,9 @@
+<div>
+    <h1>Viusic</h1>
+    <p *ngIf="playing">Reproduciendo: {{playing}}</p>
+    <hr>
+</div>
+
 <p>Discos disponibles:</p>
 <article *ngFor="let record of records; let i=index">
     <h2>{{record.title | uppercase}}</h2>
@@ -10,7 +16,7 @@
     <img src="{{record.image_path}}" alt="{{record.title}" width="200px" height="200px">
     <div *ngFor="let song of record.songs">
         <!-- <p>{{song.track}}. {{song.title}}</p> -->
-        <app-cancion [song]="song"></app-cancion>
+        <app-cancion [song]="song" (songToPlay)="playSong($event)"></app-cancion>
     </div>
     <hr *ngIf="i<records.length-1">
 </article>
