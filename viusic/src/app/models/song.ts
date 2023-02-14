@@ -1,7 +1,7 @@
 export class Song {
     constructor(
         private _id: number,
-        private _track: string,
+        private _track: number,
         private _title: string,
         private _artist: string,
         private _path: string,
@@ -15,10 +15,10 @@ export class Song {
         this._id = value;
     }
 
-    public get track(): string {
+    public get track(): number {
         return this._track;
     }
-    public set track(value: string) {
+    public set track(value: number) {
         this._track = value;
     }
 
