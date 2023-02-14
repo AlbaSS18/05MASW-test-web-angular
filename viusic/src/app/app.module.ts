@@ -13,6 +13,7 @@ import { VideojuegosComponent } from './components/videojuegos/videojuegos.compo
 import { MusicaComponent } from './components/musica/musica.component';
 import { routing } from './app.routing';
 import { ErrorComponent } from './components/error/error.component';
+import { CancionComponent } from './components/cancion/cancion.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ErrorComponent } from './components/error/error.component';
     PodcastComponent,
     VideojuegosComponent,
     MusicaComponent,
-    ErrorComponent
+    ErrorComponent,
+    CancionComponent
   ],
   imports: [
     BrowserModule,
