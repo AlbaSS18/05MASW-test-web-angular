@@ -1,3 +1,5 @@
+import { Song } from "./song";
+
 export class Disco {
     // Añadir esto es lo mismo que meterlo en el constructor
     /* 
@@ -20,6 +22,7 @@ export class Disco {
         public artist: string,
         public year: number,
         public image_path: string,
+        public songs: Array<Song>
     )
     {
     }
