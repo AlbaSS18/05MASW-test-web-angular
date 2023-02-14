@@ -1,7 +1,12 @@
-<p>musica works!</p>
-<div *ngFor="let record of records">
+<p>Discos disponibles:</p>
+<article *ngFor="let record of records; let i=index">
     <h2>{{record.title}}</h2>
     <h3>{{record.artist}}</h3>
-    <h3>{{record.year}}</h3>
+    <h3 [ngClass]="{
+        'green': record.year > 2020,
+        'orange': record.year <= 2020
+    }"
+    >{{record.year}}</h3>
     <img src="{{record.image_path}}" alt="{{record.title}" width="200px" height="200px">
-</div>
+    <hr *ngIf="i<records.length-1">
+</article>
