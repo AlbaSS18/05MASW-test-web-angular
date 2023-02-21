@@ -14,6 +14,7 @@ import { MusicaComponent } from './components/musica/musica.component';
 import { routing } from './app.routing';
 import { ErrorComponent } from './components/error/error.component';
 import { CancionComponent } from './components/cancion/cancion.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CancionComponent } from './components/cancion/cancion.component';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
