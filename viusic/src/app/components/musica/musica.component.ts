@@ -46,5 +46,8 @@ export class MusicaComponent {
   playSong(song: Song): void {
     console.log(song);
     this.playing = `${song.title} - ${song.artist}`;
+    let audioPlayer = document.getElementById('audio_player') as HTMLAudioElement;
+    audioPlayer.setAttribute('src', song.path);
+    audioPlayer.play();
   }
 }
