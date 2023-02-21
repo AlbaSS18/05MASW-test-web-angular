@@ -11,14 +11,6 @@ export class DiscoService {
   constructor(private http: HttpClient) { }
 
   public getDiscs(): Observable<any> {
-    return this.http.get<Array<Disco>>(`${urlRecord}discs`);
-  }
-
-  public getSongs(): Observable<Array<Disco>> {
-    return this.http.get<Array<Disco>>(`${urlRecord}songs`);
-  }
-
-  public getSongsFromDisc(idDisco: number): Observable<Array<Disco>> {
-    return this.http.get<Array<Disco>>(`${urlRecord}songs/from_disc/${idDisco}`);
+    return this.http.get<any>(`${urlRecord}discs`);
   }
 }
