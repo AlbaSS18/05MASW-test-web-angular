@@ -15,6 +15,8 @@ import { routing } from './app.routing';
 import { ErrorComponent } from './components/error/error.component';
 import { CancionComponent } from './components/cancion/cancion.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,14 @@ import { HttpClientModule } from '@angular/common/http';
     VideojuegosComponent,
     MusicaComponent,
     ErrorComponent,
-    CancionComponent
+    CancionComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     routing,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

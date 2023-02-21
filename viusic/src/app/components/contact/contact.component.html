@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" [(ngModel)]="solicitud.nombre" #nombre="ngModel" required pattern="[a-zA-Z]+">
+
+    <small *ngIf="!nombre.valid && nombre.touched">El nombre es obligatorio</small>
+
+    <label for="correo">Correo:</label>
+    <input type="text" id="correo" name="correo" [(ngModel)]="solicitud.correo" #correo="ngModel">    
+
+    <input type="submit" value="Enviar" [disabled]="!contactForm.valid">
+
+</form>
+
+<p>Los datos que has introducido son:</p>
+<ul>
+    <li>Nombre: {{solicitud.nombre}}</li>
+    <li>Correo: {{solicitud.correo}}</li>
+</ul>

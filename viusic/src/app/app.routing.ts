@@ -1,6 +1,7 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CineComponent } from './components/cine/cine.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 
 import { InicioComponent } from './components/inicio/inicio.component';
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
     { path: 'podcasts', component: PodcastComponent },
     { path: 'libros', component: LibrosComponent },
     { path: 'musica', component: MusicaComponent},
+    { path: 'contacto', component: ContactComponent },
     { path: '**', component: ErrorComponent } // This route must be the last one
 ];
 
